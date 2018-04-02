@@ -1,0 +1,157 @@
+.body {
+	padding: 0;
+	margin: 0;
+}
+
+.cart-checkbox {
+	transform: scale(1.4);
+	align-self: center;
+	margin-left: 3vw;
+}
+
+.item-detail-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.item-secondary-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subtotal-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Nunito;
+	font-size: 6vw;
+}
+
+.subtotal-container #subtotal-value {
+	font-weight: bolder;
+	font-size: 6.4vw;
+	margin-right: 3vw;
+}
+
+.subtotal-container .subtotal-tag {
+	margin-left: 3vw;
+}
+
+.item-secondary-container div {
+	display: inline;
+}
+
+.item-detail-container input {
+	align-self: flex-start;
+}
+
+.cart-item-img {
+	max-width: 33vw;
+	display: inline-block;
+}
+.cart-item-desc {
+	flex-grow: 1;
+	margin-left: 3vw;
+}
+
+.cart-list {
+	list-style-type: none;
+}
+
+.cart-del-button {
+	font-family: FontAwesome;
+	font-size: 4vw;
+	color : #b0b2b7;
+	align-self: flex-start;
+	margin-right: 3vw;
+}
+
+.item-bundle-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #dcdde2;
+	margin-bottom: 3vw;
+	align-items: center;
+}
+
+.clothe-size-icon {
+	width : 3.8vw;
+	height: : 3.8vw;
+	background-color: black;
+	color: white;
+	font-size: 3vw;
+	display: inline-block;
+	text-align: center;
+}
+
+.clothe-desc {
+	display: inline-block;
+	font-family: Nunito;
+	font-size: 3.8vw;
+}
+
+.item-seller {
+	font-size: 4vw
+}
+.item-name {
+	font-family: Nunito;
+	font-size: 6vw;
+}
+.item-subtitle {
+	font-family: Nunito;
+	font-size: 4vw;
+	color: #b0b2b7;
+}
+
+.item-price {
+	margin-right: 3vw;
+	font-family: Nunito;
+	font-weight: bolder;
+	font-size: 5vw;
+}
+
+.item-time-left {
+	font-family: Nunito;
+	font-size: 3.8vw;
+	color: #FF8000;
+	margin-left: 10vw;
+}
+
+.item-header {
+	display: inline-block;
+	font-size: 6vw;
+	font-weight: bolder;
+	text-align: left;
+	flex-grow: 1;
+
+/* FONT FACE*/
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Nunito.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Nunito.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Nunito.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Nunito.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Nunito.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
