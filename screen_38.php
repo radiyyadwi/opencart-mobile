@@ -38,7 +38,9 @@
 
         $orderproduct = $responseorder['data']['products'];
 
+        $i=0;
         foreach ($itemdetails as $a) {
+          $count = count($orderproduct);
           foreach ($orderproduct as $x) {
             if ($a['product_id'] == $x['product_id']) {
                echo "<img class='itemimage' src='".$a['image']."'>";
@@ -47,6 +49,10 @@
                echo "<div class='itemsource'>".$a['meta_title']."</div>";
                echo "<div class='size'> L </div>";
                echo "<div class='model'>".$a['model']."</div>";
+               if ($i != $count-1) {
+                echo "<br>";
+               }
+               $i+=1;
             } 
           }
         }
